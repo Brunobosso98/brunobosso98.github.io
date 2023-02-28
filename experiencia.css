@@ -1,0 +1,103 @@
+.experiencia {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 40px 20px;
+  gap: 150px;
+}
+
+.experiencia strong {
+  color: black;
+}
+
+.experiencia .subtitulo {
+  color: #9c9c9c;
+}
+
+.experiencia-texto {
+  max-width: 40ch;
+  font-size: 1.5rem;
+  margin-bottom: 60px;
+  line-height: 1.33;
+}
+
+.trabalho {
+  display: grid;
+  gap: 10px 20px;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  background-color: #ededed;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.trabalho::before {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 12px;
+  background-color: red;
+  position: absolute;
+  top: 20px;
+}
+
+.trabalho-titulo {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  font-family: "Merriweather Sans ExtraBold";
+}
+
+.trabalho-ano {
+  position: absolute;
+  top: 20px;
+  left: -70px;
+  color: #717171;
+}
+
+.trabalho-skill {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: start;
+  justify-content: center;
+}
+
+.trabalho .trabalho-skill li {
+  background-color: #dedede;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+
+.trabalho-texto {
+  color: #717171;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 800px) {
+  .experiencia {
+    grid-template-columns: 1fr;
+  }
+  .experiencia-texto {
+    margin-top: -90px;
+    font-size: 1.25rem;
+    max-width: 33ch;
+  }
+  .subtitulo {
+    text-transform: uppercase;
+    font-size: 4em;
+    margin-top: 50px;
+  }
+  .trabalho {
+    border-radius: 10px;
+    margin-top: 45px;
+  }
+  .trabalho-ano {
+    top: -25px;
+    left: 0px;
+  }
+}

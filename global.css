@@ -1,0 +1,37 @@
+body {
+  font-family: "Merriweather Sans", arial, sans-serif;
+  justify-items: center;
+  color: #0e0e0e;
+  margin: 0px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul {
+  margin: 0px;
+  list-style: none;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.subtitulo {
+  font-size: 2.4rem;
+  line-height: 1;
+  max-width: 4ch;
+  font-family: "Merriweather Sans ExtraBold";
+}
