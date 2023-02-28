@@ -35,3 +35,9 @@ a {
   max-width: 4ch;
   font-family: "Merriweather Sans ExtraBold";
 }
+
+@media (max-width: 460px) {
+  .subtitulo {
+    font-size: 3em;
+  }
+}
